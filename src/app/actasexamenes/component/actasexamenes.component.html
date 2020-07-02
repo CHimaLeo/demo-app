@@ -1,0 +1,64 @@
+<div id="form-container">
+  <section>
+    <form [formGroup]="formGroup">
+    
+      <div id="div1-container">
+        <label id="label-form">Periodo:</label> 
+        <select formControlName="periodo" id="select-form">
+          <option *ngFor="let periodoOption of periodoOptions" [value]="periodoOption.id" [selected]="defaultValue">{{periodoOption.value}}</option>
+        </select>
+      </div>
+
+      <div id="div2-container">
+        <label id="label-form">NRC:</label>
+        <input type="text" formControlName="nrc" id="input-form"/>
+        
+        <label id="label-form">Experiencia Educativa:</label>
+        <select formControlName="experienciaEducativa" id="select-form">
+          <option *ngFor="let experienciaEducativaOption of experienciaEducativaOptions">{{experienciaEducativaOption.value}}</option>
+        </select>
+        
+        <label id="label-form">Tipo de Examen:</label>
+        <select formControlName="tipoExamen" id="select-form">
+          <option *ngFor="let tipoExamenOption of tipoExamenOptions">{{tipoExamenOption.value}}</option>
+        </select>
+        <button id="content_btnBusca1" type="submit" (click)="buscar()" >Buscar</button>
+      </div>
+    </form>
+  </section>
+</div>
+<div class="div-separador25px"></div>
+<div class="div-separador25px"></div>
+    <div id="table-container">
+      <div id="div-table-container" *ngIf="datos && datos.length">
+          <table>
+              <thead>
+                  <th>No</th>
+                  <th>Experencia Educativa</th>
+                  <th>NRC</th>
+                  <th>LC</th>
+                  <th>Cod. Curso</th>
+                  <th>Tipo de Examen</th>
+                  <th>Programa Educativo</th>
+                  <th>Campus</th>
+              </thead>
+              <tbody>
+                  <tr *ngFor="let dato of datos">
+                      <td>{{dato}}</td>
+                      <td>{{dato}}</td>
+                      <td>{{dato}}</td>
+                      <td>{{dato}}</td>
+                      <td>{{dato}}</td>
+                      <td>{{dato}}</td>
+                      <td>{{dato}}</td>
+                      <td>{{dato}}</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+      <div class="divNoData" *ngIf="!datos">
+        <span>No hay datos para mostrar</span>
+      </div>  
+    </div>
+
+

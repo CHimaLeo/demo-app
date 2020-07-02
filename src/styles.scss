@@ -1,1 +1,449 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { 
+    margin:0;
+    padding:0;
+    font-family:'Segoe UI',Calibri,Arial;
+    height:100%;
+    width:100%
+ }
+body { 
+    padding:0;
+	margin:0;
+	font-family:'Segoe UI',Calibri,Arial;
+}
+
+#header-main {
+    min-height: 170px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#section-logoMiUV {
+    float: left;
+    margin-top: 20px;
+    margin-left: 3%;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#section-nombreUV {
+    width: 70%;
+    height: 55px;
+    float: right;
+    background: -ms-linear-gradient(left, #fff 5%,#069 50%);
+    background: -moz-linear-gradient(left, #fff 5%, #069 50%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(5%,#fff), color-stop(50%,#069));
+    background: -webkit-linear-gradient(left, #fff 5%,#069 50%);
+    background: -o-linear-gradient(left, #fff 5%,#069 50%);
+    background: linear-gradient(to right, #fff 5%,#069 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr='#FFFFFF', endColorstr='#006699');
+}
+
+#span-nombreUV {
+    font-size: 2.25em;
+    float: right;
+    margin-top: 6px;
+    margin-right: 22px;
+    color: #fff;
+}
+
+#nav-menuMiUV {
+    width: 65%;
+    height: 65px;
+    float: right;
+    margin-top: 25px;
+    margin-right: 5%;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+#ul-menuMiUV {
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    float: right;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+#li-salir {
+    background: url(./assets/img/sprite-MiUV-configuracion.png) no-repeat scroll 0px -372px transparent;
+}
+
+#li-salir:hover
+{
+	background:url(./assets/img/sprite-MiUV-configuracion.png) no-repeat scroll 0px -457px transparent;
+}
+
+#li-config {
+    background: url(./assets/img/sprite-MiUV-configuracion.png) no-repeat scroll 0px -198px transparent;
+}
+
+#li-config:hover
+{
+	background:url(./assets/img/sprite-MiUV-configuracion.png) no-repeat scroll 0px -285px transparent;
+}
+
+#li-busq {
+    background: url(./assets/img/busqueda.png) no-repeat;
+}
+
+#li-busq:hover {
+    background:url(./assets/img/busqueda.png) no-repeat;
+}
+
+
+
+
+
+#ul-menuMiUV li {
+    list-style-type: none;
+    float: right;
+    width: 64px;
+    height: 64px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#div-usuarioInterno {
+    width: 100%;
+    min-height: 70px;
+    height: auto;
+}
+
+#div-mnuRegresar {
+    width: auto;
+    float: left;
+    min-height: 33px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+#tilePage {
+    color: #036;
+    font-size: 1.8em;
+    font-family: Calibri;
+}
+
+a-mnuRegresar, .Regresolkn, #menuNavegacion_a_mnuRegresar, #a-ocultarBuzon {
+    display: block;
+    height: 30px;
+    width: 30px;
+    float: left;
+}
+
+#a-mnuRegresar, #menuNavegacion_a_mnuRegresar, .Regresolkn {
+    background: url(./assets/img/sprite-Return2.png) no-repeat scroll;
+    background-position: 1px -60px;
+}
+
+.lblValor, .lblValor a {
+    /* color: #006600; */
+    color: #726f6d;
+    /* font-size: 12px; */
+    text-decoration: none;
+    text-transform: none;
+}
+
+#div-InfoUsuario {
+    width: auto;
+    float: right;
+    margin-right: 15px;
+}
+
+#div-perfilInterno {
+    width: 64px;
+    height: 64px;
+    float: left;
+}
+
+.eActivoAdmin {
+    background: url(./assets/img/sprite-MiUV.png) no-repeat scroll 0px -1280px transparent;
+}
+
+#div-nombreUsuarioInterno {
+    font-family: Arial;
+    font-size: 1.3em;
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+#div-nombreUsuarioInterno {
+    color: #666;
+}
+
+.dvCampos {
+    margin-bottom: 10px;
+}
+
+.lblValor, .lblValor a {
+    /* color: #006600; */
+    color: #726f6d;
+    /* font-size: 12px; */
+    text-decoration: none;
+    text-transform: none;
+}
+
+select:not(:-internal-list-box) {
+    overflow: visible !important;
+}
+
+select {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark-color(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: menulist;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    background-color: -internal-light-dark-color(rgb(255, 255, 255), rgb(59, 59, 59));
+    cursor: default;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    border-radius: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark-color(rgb(118, 118, 118), rgb(195, 195, 195));
+    border-image: initial;
+}
+
+#footer-main {
+    width: 98%;
+    padding-left: 1%;
+    font-size: .875em;
+    margin: auto;
+    max-width: 1230px;
+}
+
+#section-footGeneral {
+    width: 68%;
+    margin-right: 7px;
+    float: left;
+    min-height: 70px;
+    padding-top: 10px;
+    background: #f5f5f5;
+    text-align: right;
+}
+
+#ul-footGeneral-mnu {
+    width: auto;
+}
+
+#section-footGeneral ul {
+    float:right;
+    margin:5px 12px;
+    padding:0
+}
+
+#ul-footGeneral-mnu li a {
+    color: #036;
+    text-decoration: underline;
+}
+
+#ul-footGeneral-mnu {
+    width:auto
+}
+
+#ul-footGeneral-mnu li {
+    list-style-type:none;
+    float:left;
+    margin:2px 4px 2px 4px
+}
+
+#ul-footGeneral-mnu li a {
+    color:#036;
+    text-decoration:underline
+}
+
+#ul-footGeneral-copyright {
+    clear:both;
+    max-width:490px;
+    width:auto
+}
+
+#ul-footGeneral-copyright li {
+    list-style-type:none;
+    float:left
+}
+
+#ul-footGeneral-copyright li a { 
+    color:#036;
+    text-decoration:underline
+}
+
+#li-copy {
+    color:#666;
+    font-size:.9em;
+    text-align:right;
+    margin-right:20px
+}
+
+#section-footBuzon {
+    background:#e0e0e0;
+    color:#039;
+    float:left;
+    height:80px;
+    width:28%
+}
+
+#section-footBuzon a span {
+    margin-left:14%;
+    padding-top:12px
+}
+
+#section-footBuzon a div { height:15px }
+
+
+#ul-footGeneral-copyright li {
+    list-style-type: none;
+    float: left;
+}
+
+#li-copy {
+    color: #666;
+    font-size: .9em;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.clearFloats {
+    height: 1px;
+    clear: both;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#section-footBuzon {
+    background: #e0e0e0;
+    color: #039;
+    float: left;
+    height: 80px;
+    width: 28%;
+}
+
+#section-footBuzon a {
+    background: url(./assets/img/buzon.png) no-repeat scroll 180px 15px transparent;
+    display: block;
+    color: inherit;
+    height: 100%;
+    text-decoration: none;
+    font-size: 1.6em;
+}
+
+table {
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+}
+
+thead {
+    color: white;
+    background-color: #e17126;
+}
+
+tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+#form-container{
+    min-height: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#div1-container {
+    float: left;
+    margin-top: 10px;
+    margin-left: 3%;
+}
+
+#div2-container {
+    width: 93%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 3%;
+}
+
+.divNoData {
+    width: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    color: #646464;
+    font-size: 1.3em;
+    font-style: italic;
+    text-align: center;
+}
+
+#content_btnBusca1 {
+    float: right;
+    margin-left: 9%;
+    height: 2em;
+    text-align: center;
+    background: #6f7471 !important;
+    color: #fff !important;
+    border: none;
+    font-size: 1em;
+    margin: 5px;
+    width : 100px;
+}
+
+#select-form {
+    width : 250px;
+    padding: 3px;
+    margin: 5px;
+}
+
+#input-form {
+    width : 100px;
+    padding: 3px;
+    margin: 2px;
+}
+
+#label-form {
+    width : 100px;
+    margin: 5px;
+}
+
+#table-container {
+    min-height: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#div-table-container {
+    width: 93%;
+    float: center;
+    margin-top: 10px;
+    margin-left: 3%;
+}
